@@ -1,0 +1,177 @@
+/* Five-color palette: #FFF8F0, #FFFFFF, #30251F, #9A431D, #F7E0CB. */
+
+body {
+    background-color: #FFF8F0;
+    color: #30251F;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 32px 20px;
+}
+
+#profile {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 32px;
+    background-color: #FFFFFF;
+    border: 2px solid #F7E0CB;
+    border-radius: 16px;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0 0 12px;
+}
+
+h1, h2, b {
+    color: #9A431D;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0 0 8px;
+}
+
+/* big first letter on the title */
+h1::first-letter {
+    font-size: 48px;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid #F7E0CB;
+    margin: 20px 0;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+    display: flex;
+    gap: 10px;
+    margin: 16px 0 24px;
+}
+
+nav a {
+    padding: 8px 16px;
+    border: 1px solid #F7E0CB;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* ---------- Links ---------- */
+a {
+    color: #9A431D;
+    text-decoration: underline;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #30251F;
+    background-color: #F7E0CB;
+}
+
+/* mark external links */
+a[href^="https"]::after {
+    content: " ↗";
+}
+
+/* ---------- Sections ---------- */
+section {
+    padding: 16px 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border-left: 4px solid transparent;
+}
+
+/* highlight the section picked in the nav */
+section:target {
+    background-color: #FFF8F0;
+    border-left: 4px solid #9A431D;
+}
+
+/* ---------- Detail cards ---------- */
+.details {
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+}
+
+/* bullets in the accent color */
+.details li::marker {
+    color: #9A431D;
+}
+
+#profile li {
+    margin: 0 0 12px;
+    padding: 14px 18px;
+    border: 1px solid #F7E0CB;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+
+/* hover feedback on cards */
+
+
+
+.fun-fact {
+    font-style: italic;
+}
+
+#profile li.fun-fact {
+    background-color: #F7E0CB;
+    border-left: 4px solid #9A431D;
+}
+
+/* ---------- Form ---------- */
+label {
+    display: block;
+    margin: 10px 0 4px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px 10px;
+    border: 1px solid #F7E0CB;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Input pseudo-classes */
+input:focus {
+    outline: 2px solid #9A431D;
+}
+
+input:required {
+    border-left: 4px solid #9A431D;
+}
+
+input:valid {
+    background-color: #FFFFFF;
+}
+
+input:invalid:not(:placeholder-shown) {
+    background-color: #F7E0CB;
+}
+
+button {
+    margin-top: 14px;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 6px;
+    background-color: #9A431D;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+/* selected text */
+::selection {
+    background-color: #9A431D;
+    color: #FFFFFF;
+}

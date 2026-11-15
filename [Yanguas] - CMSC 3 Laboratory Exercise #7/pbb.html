@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PBB Collab 3.0</title>
+    <style>
+        a:link { color: blue; }
+        a:visited { color: purple; }
+        a:hover { color: red; }
+        a:active { color: orange; }
+
+        button:hover { background-color: lightblue; }
+        button:focus { outline: 2px solid blue; }
+        button:disabled { background-color: lightgray; }
+
+        input:checked { accent-color: green; }
+        input:required { outline: 2px solid orange; }
+        input:valid { accent-color: green; }
+        input:invalid { accent-color: red; }
+
+        section:target {
+            background-color: lightyellow;
+            border: 2px solid orange;
+        }
+
+        p::first-line { color: blue; font-weight: bold; }
+        p::first-letter { font-size: 30px; color: red; }
+        ::selection { background-color: yellow; color: black; }
+
+        a[download] { color: green; }
+        input[type="radio"] { cursor: pointer; }
+        a[href^="https"] { background-color: lightyellow; }
+        a[href$=".pdf"] { font-weight: bold; }
+        a[href*="gmanetwork"] { color: red; }
+    </style>
+</head>
+<body>
+    <h1>WHO WILL YOU SAVE?</h1>
+    <p>One Kapamilya. One Kapuso. Your vote matters!</p>
+
+    <nav>
+        <a href="#kapamilya">Kapamilya Nominees</a>
+        <a href="#kapuso">Kapuso Nominees</a>
+        <a href="https://www.gmanetwork.com">PBB Updates</a>
+    </nav>
+
+    <form>
+        <section id="kapamilya">
+            <h2>Kapamilya Nominees</h2>
+            <p>Who deserves to stay in the Big Brother house?</p>
+
+            <input type="radio" name="kapamilya" required> Calix Esguerra
+            <input type="radio" name="kapamilya"> Primo Alterado
+            <input type="radio" name="kapamilya"> Nathan Garcia
+        </section>
+
+        <section id="kapuso">
+            <h2>Kapuso Nominees</h2>
+            <p>Who deserves to stay in the Big Brother house?</p>
+
+            <input type="radio" name="kapuso" required> Ethan Benares
+            <input type="radio" name="kapuso"> Nicole Fortuna
+            <input type="radio" name="kapuso"> Mikee Quintos
+        </section>
+
+        <p>Choose one from each team. Walang bias? Sure ka?</p>
+        <button type="submit">Save My Housemates!</button>
+        <button type="button" disabled>Voting Closed</button>
+    </form>
+
+    <a href="pbb-guide.pdf" download>Download Fan Guide</a>
+</body>
+</html>
